@@ -36,11 +36,6 @@ SWEP.BalanceStats = {
         Range_Max = 5000,
 
         RecoilVisualKick = 20,
-
-        MoveSpeedMult = 0.65,
-        ShootingSpeedMult = 0.25,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = { // this is a buyable weapon in TTT
         Range_Min = 500,
@@ -48,18 +43,10 @@ SWEP.BalanceStats = {
 
         Penetration = 75,
         RecoilDissipationRate = 0.5,
-        ShootingSpeedMult = 0.25,
-        MeleeSpeedMult = 1,
     },
     [TacRP.BALANCE_PVE] = {
         Range_Min = 4000,
         Range_Max = 8000,
-
-        MoveSpeedMult = 0.6,
-        ShootingSpeedMult = 0.4,
-        SightedSpeedMult = 0.15,
-        MeleeSpeedMult = 1,
-        ReloadSpeedMult = 1,
     },
 }
 
