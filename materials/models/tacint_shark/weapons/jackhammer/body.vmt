@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models\tacint_shark\weapons\jackhammer\body"
 	"$bumpmap"	"models\tacint_shark\weapons\jackhammer\body_n"
-	"$envmap" 	"env_cubemap"
+	//"$envmap" 	"env_cubemap"
 	"$normalmapalphaenvmapmask" "1"
 	"$phongtint"		"[0.8 0.9 1]"
 	"$envmaptint"		"[0.03 0.03 0.03]"
