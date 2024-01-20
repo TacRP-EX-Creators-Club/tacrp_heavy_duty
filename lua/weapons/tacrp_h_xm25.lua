@@ -34,12 +34,10 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
     },
     [TacRP.BALANCE_TTT] = {
-        ReloadTimeMult = 1.75,
         RPM = 65,
     ClipSize = 4,
     },
     [TacRP.BALANCE_PVE] = {
-        ReloadTimeMult = 1.5,
     },
 }
 

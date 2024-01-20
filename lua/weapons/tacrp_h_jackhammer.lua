@@ -44,7 +44,6 @@ SWEP.BalanceStats = {
 
         JamFactor = 0.04,
         RPM = 200,
-        ReloadTimeMult = 1.7,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 8,

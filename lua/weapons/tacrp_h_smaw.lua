@@ -34,7 +34,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
     },
     [TacRP.BALANCE_TTT] = {
-        ReloadTimeMult = 1.75,
     },
 }
 
