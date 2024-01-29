@@ -9,7 +9,7 @@ SWEP.AbbrevName = "Executioner"
 
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "2Magnum Pistol"
 
 SWEP.Description = "Massive revolver shooting small-bore shotgun shells.\nFires a lot of pellets, but spread is poor."
@@ -87,7 +87,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Shotgun
 
 // "ballistics"
 
-SWEP.Damage_Max = 11 // damage at minimum range
+SWEP.Damage_Max = 10 // damage at minimum range
 SWEP.Damage_Min = 4 // damage at maximum range
 SWEP.Range_Min = 300 // distance for which to maintain maximum damage
 SWEP.Range_Max = 1500 // distance at which we drop to minimum damage
