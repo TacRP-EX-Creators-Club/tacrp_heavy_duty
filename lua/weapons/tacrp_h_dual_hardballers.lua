@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Dual Silverballers"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "A pair of sleek longslide pistols, a high profile choice for low profile assassins.\nGood range for akimbos - if you can hit anything, that is."
@@ -66,9 +66,9 @@ SWEP.TTTReplace = {["weapon_zm_pistol"] = 0.5, ["weapon_ttt_glock"] = 0.5}
 
 // "ballistics"
 
-SWEP.Damage_Max = 30
+SWEP.Damage_Max = 37
 SWEP.Damage_Min = 20
-SWEP.Range_Min = 600
+SWEP.Range_Min = 500
 SWEP.Range_Max = 2400
 SWEP.Penetration = 4
 SWEP.ArmorPenetration = 0.65
@@ -91,7 +91,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 400
+SWEP.RPM = 300
 
 SWEP.Spread = 0.01
 

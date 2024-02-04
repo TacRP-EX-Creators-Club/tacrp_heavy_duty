@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "AMT Hardballer"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "2Operator"
+SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Long-slide pistol with stainless steel construction. Accurate and hits hard at range."
@@ -31,6 +31,7 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        RPM = 270,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 35,
@@ -73,9 +74,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 30
+SWEP.Damage_Max = 37
 SWEP.Damage_Min = 20
-SWEP.Range_Min = 600 // distance for which to maintain maximum damage
+SWEP.Range_Min = 500 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2400 // distance at which we drop to minimum damage
 SWEP.Penetration = 4 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.65
@@ -98,13 +99,14 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 250
+SWEP.RPM = 280
+SWEP.RPMMultSemi = 0.65
 
 SWEP.Spread = 0.005
 SWEP.RecoilSpreadPenalty = 0.01
 SWEP.HipFireSpreadPenalty = 0.025
 
-SWEP.ShootTimeMult = 0.6
+SWEP.ShootTimeMult = 0.75
 
 SWEP.RecoilResetInstant = true
 SWEP.RecoilPerShot = 1
@@ -258,7 +260,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     [1] = {
-        PrintName = "Tactical",
+        PrintName = "Optic",
         Category = {"optic_pistol", "hardballer_laser"},
         Bone = "slide",
         WMBone = "Box01",
