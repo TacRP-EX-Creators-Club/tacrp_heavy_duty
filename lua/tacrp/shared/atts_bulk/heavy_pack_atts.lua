@@ -105,7 +105,7 @@ ATT.SortOrder = 1
 
 ATT.Laser = true
 ATT.CanToggle = true
-ATT.LaserQCAttachmentVM = 4
+ATT.LaserQCAttachmentVM = 5
 ATT.LaserQCAttachmentWM = 1
 
 ATT.Mult_HipFireSpreadPenalty = 0.75
