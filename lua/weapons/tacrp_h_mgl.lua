@@ -4,25 +4,25 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "HK XM25 CDTE"
+SWEP.PrintName = "Milkor M32 MGL"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "6Launcher"
 
-SWEP.Description = "Bullpup grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
+SWEP.Description = "Multi-grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
 
-SWEP.Trivia_Caliber = "25x40mm"
-SWEP.Trivia_Manufacturer = "Heckler & Koch"
-SWEP.Trivia_Year = "2010"
+SWEP.Trivia_Caliber = "40x46mm"
+SWEP.Trivia_Manufacturer = "Milkor (Pty) Ltd"
+SWEP.Trivia_Year = "1983"
 
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
-Assets: Call of Duty: Modern Warfare 3 (2011)
+Assets: Call of Duty: Black Ops 2
 Animation: Tactical Intervention, edited by speedonerd
 ]]
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_xm25.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_m32.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_xm25.mdl"
 
 SWEP.NoRanger = true
@@ -117,7 +117,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -3, -6)
+SWEP.PassivePos = Vector(2, -4, -5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(4, -2, -4)
@@ -132,7 +132,7 @@ SWEP.SightAng = Angle(-0.7, 2, 2)
 SWEP.SightPos = Vector(-3.8, -3, -5.5)
 
 SWEP.CustomizeAng = Angle(35, 15, 0)
-SWEP.CustomizePos = Vector(4, 0, -8)
+SWEP.CustomizePos = Vector(8, 0, -8)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
@@ -156,23 +156,22 @@ SWEP.CanMeleeAttack = true
 
 // reload
 
-SWEP.ClipSize = 5
+SWEP.ClipSize = 6
 SWEP.Ammo = "smg1_grenade"
 
 SWEP.ReloadTimeMult = 1.6
-SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/xm25.mdl"
+SWEP.DropMagazineModel = false
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.DropMagazineTime = 0.8
 
-SWEP.ReloadTimeMult = 1.7
-SWEP.ReloadUpInTime = 1.4
+SWEP.ReloadUpInTime = 2
 
 // sounds
 
-local path = "tacint_shark/xm25/"
+local path = "tacint_shark/m32/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
+SWEP.Sound_Shoot = "^" .. path .. "40mm_fire.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
@@ -182,7 +181,7 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // the .qc attachment for the muzzle
 SWEP.QCA_Muzzle = 1
 // ditto for shell
-SWEP.QCA_Eject = 2
+SWEP.QCA_Eject = 0
 
 SWEP.MuzzleEffect = "muzzleflash_m79"
 
@@ -230,9 +229,10 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_xm25.Remove_Clip", path .. "magout.wav")
-addsound("tacint_xm25.Insert_Clip", path .. "magin.wav")
-addsound("tacint_xm25.Bolt_LockBack", path .. "bolt.wav")
+addsound("tacint_m32.Open", path .. "raise.wav")
+addsound("tacint_m32.Eject", path .. "open.wav")
+addsound("tacint_m32.Insert", path .. "loading.wav")
+addsound("tacint_m32.Close", path .. "close.wav")
 
 SWEP.AutoSpawnable = false
 if engine.ActiveGamemode() == "terrortown" then
