@@ -23,11 +23,11 @@ Animation: Tactical Intervention, edited by speedonerd
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_m32.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_xm25.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_m32.mdl"
 
 SWEP.NoRanger = true
 
-SWEP.Slot = 2
+SWEP.Slot = 4
 SWEP.SlotAlt = 4
 
 SWEP.BalanceStats = {
@@ -117,7 +117,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(2, -4, -5)
+SWEP.PassivePos = Vector(1, -4, -4.5)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(4, -2, -4)
@@ -161,7 +161,7 @@ SWEP.Ammo = "smg1_grenade"
 
 SWEP.ReloadTimeMult = 1.6
 SWEP.DropMagazineModel = false
-SWEP.DropMagazineImpact = "metal"
+SWEP.DropMagazineImpact = ""
 
 SWEP.DropMagazineTime = 0.8
 
@@ -191,7 +191,7 @@ SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster",
     ["fire"] = "fire1_M",
     ["blind_fire"] = {"blind_shoot1"},
-    ["melee"] = {"melee1", "melee2"},
+    ["melee"] = "melee2",
     ["reload"] = "reload",
 }
 
