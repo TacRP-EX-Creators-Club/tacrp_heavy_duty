@@ -11,7 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Boutique double-barreled big-game hunting rifle, firing a round designed to fell elephants. Despite its looks, it is not a shotgun."
-SWEP.Description_Quote = "Life is a great adventure, accept it in such a spirit."
+SWEP.Description_Quote = "\"Life is a great adventure, accept it in such a spirit.\""
 
 SWEP.Trivia_Caliber = ".600 Nitro Express"
 SWEP.Trivia_Manufacturer = "Holland & Holland"

@@ -10,8 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Shotgun"
 
-SWEP.Description = "Bulky automatic shotgun with a cylinder magazine, known for its distinctive look and prevalence in video games. Quite heavy and a bit unreliable."
-SWEP.Description_Quote = "Moo, I say!"
+SWEP.Description = "One-of-one bulky automatic shotgun with a cylinder magazine. Quite heavy and a bit unreliable."
+SWEP.Description_Quote = "\"Moo, I say!\""
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Pancor Corporation"

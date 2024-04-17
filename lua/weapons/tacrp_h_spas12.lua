@@ -11,7 +11,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Imposing combat shotgun with dual mode operation. High power and stable recoil. Folding stock blocks the use of optics."
-SWEP.Description_Quote = "\"Look to your own salvation!\""
+SWEP.Description_Quote = "\"Wrong.\""
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Luigi Franchi S.p.A."

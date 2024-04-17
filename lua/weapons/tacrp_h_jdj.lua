@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP (Special)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "7Special Weapon"
 
-SWEP.Description = "Unfathomly large \"hunting rifle\" shooting an unfathomably large round nearly an inch in diameter. \nIf this thing can't kill your target...God help you. \nEquipped with a 10x scope by default."
+SWEP.Description = "Unfathomly large \"hunting rifle\" shooting a ludicrously powerful round. I don't know how you're even able to shoulder-fire this thing. \nEquipped with a 10x scope by default."
 
 SWEP.Trivia_Caliber = ".950 JDJ"
 SWEP.Trivia_Manufacturer = "SSK Industries"
@@ -43,10 +43,6 @@ SWEP.BalanceStats = {
 
         Penetration = 75,
         RecoilDissipationRate = 0.5,
-    },
-    [TacRP.BALANCE_PVE] = {
-        Range_Min = 4000,
-        Range_Max = 8000,
     },
 }
 
@@ -87,13 +83,13 @@ SWEP.FiremodeName = "Single Shot" // only used externally for firemode name dist
 
 SWEP.RPM = 40
 
-SWEP.Spread = 0
+SWEP.Spread = 0.0015
 
 SWEP.HipFireSpreadPenalty = 0.2
 SWEP.PeekPenaltyFraction = 0.2
 
-SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 1
+SWEP.RecoilPerShot = 10
+SWEP.RecoilMaximum = 10
 SWEP.RecoilResetTime = 1.25
 SWEP.RecoilDissipationRate = 0.9
 SWEP.RecoilFirstShotMult = 1
@@ -101,7 +97,7 @@ SWEP.RecoilCrouchMult = 1
 
 SWEP.RecoilVisualKick = 30
 SWEP.RecoilKick = 50
-SWEP.RecoilStability = 0.85
+SWEP.RecoilStability = 1
 
 SWEP.RecoilSpreadPenalty = 0.25
 
@@ -110,8 +106,8 @@ SWEP.CanBlindFire = false
 // handling
 
 SWEP.MoveSpeedMult = 0.5
-SWEP.ShootingSpeedMult = 0.1
-SWEP.SightedSpeedMult = 0
+SWEP.ShootingSpeedMult = 0.05
+SWEP.SightedSpeedMult = 0.025
 
 SWEP.ReloadSpeedMult = 0.25
 
@@ -270,12 +266,12 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [7] = {
-        PrintName = "Ammo",
-        Category = {"ammo_amr"},
-        AttachSound = "TacRP/weapons/flashlight_on.wav",
-        DetachSound = "TacRP/weapons/flashlight_off.wav",
-    },
+    --[7] = {
+        --PrintName = "Ammo",
+        --Category = {"ammo_amr"},
+        --AttachSound = "TacRP/weapons/flashlight_on.wav",
+        --DetachSound = "TacRP/weapons/flashlight_off.wav",
+    --},
     [8] = {
         PrintName = "Perk",
         Category = {"perk", "perk_shooting", "perk_reload"},
