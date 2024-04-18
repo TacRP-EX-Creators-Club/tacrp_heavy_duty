@@ -4,7 +4,7 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Milkor M32 MGL"
+SWEP.PrintName = "Milkor MGL"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
@@ -116,11 +116,14 @@ SWEP.HoldTypeBlindFire = false
 SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
-SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(1, -4, -4.5)
+SWEP.PassiveAng = Angle(0, 5, 0)
+SWEP.PassivePos = Vector(1, -7, -7.5)
 
-SWEP.BlindFireAng = Angle(0, 5, 0)
-SWEP.BlindFirePos = Vector(4, -2, -4)
+SWEP.BlindFireAng = Angle(0, 0, -30)
+SWEP.BlindFirePos = Vector(1, -3, 0)
+
+SWEP.BlindFireLeftAng = Angle(75, 0, 0)
+SWEP.BlindFireLeftPos = Vector(8, 10, -6)
 
 SWEP.BlindFireSuicideAng = Angle(0, 135, 0)
 SWEP.BlindFireSuicidePos = Vector(-3, 25, -19)
@@ -189,9 +192,9 @@ SWEP.MuzzleEffect = "muzzleflash_m79"
 
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster",
-    ["fire"] = "fire1_M",
-    ["blind_fire"] = {"blind_shoot1"},
-    ["melee"] = "melee2",
+    ["fire"] = "fire",
+    ["blind_fire"] = "fire",
+    ["melee"] = "melee1",
     ["reload"] = "reload",
 }
 
