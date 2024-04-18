@@ -88,6 +88,7 @@ SWEP.RecoilKick = 12
 SWEP.RecoilSpreadPenalty = 0.1
 SWEP.HipFireSpreadPenalty = 0.075
 SWEP.PeekPenaltyFraction = 0.2
+SWEP.RecoilStability = 0.85
 
 SWEP.CanBlindFire = true
 
@@ -134,8 +135,8 @@ SWEP.SprintPos = Vector(4, 0, -4)
 SWEP.SightAng = Angle(-0.7, 2, 2)
 SWEP.SightPos = Vector(-3.8, -3, -5.5)
 
-SWEP.CustomizeAng = Angle(35, 15, 0)
-SWEP.CustomizePos = Vector(8, 0, -8)
+SWEP.CustomizeAng = Angle(35, 12, 0)
+SWEP.CustomizePos = Vector(9, -6, -8)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
@@ -162,7 +163,7 @@ SWEP.CanMeleeAttack = true
 SWEP.ClipSize = 6
 SWEP.Ammo = "smg1_grenade"
 
-SWEP.ReloadTimeMult = 1.6
+SWEP.ReloadTimeMult = 1.75
 SWEP.DropMagazineModel = false
 SWEP.DropMagazineImpact = ""
 
