@@ -118,7 +118,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 5, 0)
-SWEP.PassivePos = Vector(1, -7, -7.5)
+SWEP.PassivePos = Vector(1.5, -7, -8)
 
 SWEP.BlindFireAng = Angle(0, 0, -30)
 SWEP.BlindFirePos = Vector(1, -3, 0)
@@ -163,7 +163,7 @@ SWEP.CanMeleeAttack = true
 SWEP.ClipSize = 6
 SWEP.Ammo = "smg1_grenade"
 
-SWEP.ReloadTimeMult = 1.75
+SWEP.ReloadTimeMult = 1.8
 SWEP.DropMagazineModel = false
 SWEP.DropMagazineImpact = ""
 
@@ -199,7 +199,7 @@ SWEP.AnimationTranslationTable = {
     ["reload"] = "reload",
 }
 
-SWEP.DeployTimeMult = 3
+SWEP.DeployTimeMult = 2.25
 
 // attachments
 
