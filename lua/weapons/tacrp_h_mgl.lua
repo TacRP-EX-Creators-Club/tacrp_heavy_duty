@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP (Special)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "6Launcher"
 
-SWEP.Description = "Multi-grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
+SWEP.Description = "Multi-grenade launcher with an integrated rangefinder scope. Cylinder design allows for high capacity and a reasonable rate of fire."
 
 SWEP.Trivia_Caliber = "40x46mm"
 SWEP.Trivia_Manufacturer = "Milkor (Pty) Ltd"
@@ -66,24 +66,24 @@ SWEP.Num = 1
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 90
+SWEP.RPM = 85
 
-SWEP.Spread = 0.015
+SWEP.Spread = 0.012
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2.5
-SWEP.RecoilResetTime = 0.5 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 2
+SWEP.RecoilMaximum = 1.5
+SWEP.RecoilResetTime = 0 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 0.75
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 4
 
-SWEP.RecoilKick = 12
+SWEP.RecoilKick = 18
 
-SWEP.RecoilSpreadPenalty = 0.03
+SWEP.RecoilSpreadPenalty = 0.04
 SWEP.HipFireSpreadPenalty = 0.075
-SWEP.PeekPenaltyFraction = 0.2
-SWEP.RecoilStability = 0.5
+SWEP.PeekPenaltyFraction = 0.15
+SWEP.RecoilStability = 0.35
 
 SWEP.CanBlindFire = true
 
@@ -138,7 +138,7 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.Sway = 3
+SWEP.Sway = 2.5
 SWEP.ScopedSway = 0.4
 
 // scope
@@ -174,6 +174,14 @@ SWEP.Sound_Shoot = "^" .. path .. "40mm_fire.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
+
+SWEP.Laser = true
+SWEP.LaserPower = 4
+SWEP.LaserQCAttachmentVM = 1
+SWEP.LaserQCAttachmentWM = 1
+SWEP.LaserAlwaysAccurate = true
+SWEP.CanToggle = true
+SWEP.TacticalName = "Laser"
 
 // effects
 

@@ -192,7 +192,7 @@ TacRP.LoadAtt(ATT, "ammo_smaw_tandem")
 ATT = {}
 
 ATT.PrintName = "Stunstorm"
-ATT.FullName = "40mm Stunstorm Grenades"
+ATT.FullName = "25mm Stunstorm Grenades"
 ATT.Icon = Material("entities/tacrp_att_ammo_40mm_concussion.png", "mips smooth")
 ATT.Description = "Grenades that briefly incapacitate the target."
 ATT.Pros = {"att.procon.flash"}
@@ -204,9 +204,31 @@ ATT.SortOrder = 1
 
 ATT.Mult_RPM = 60 / 75
 ATT.Override_ShootEnt = "tacrp_proj_25mm_stun"
-ATT.Mult_ShootEntForce = 0.75
+ATT.Mult_ShootEntForce = 0.8
+
+ATT.Override_Damage_Max = 55
+ATT.Override_Damage_Min = 55
+
+TacRP.LoadAtt(ATT, "ammo_25mm_stun")
+
+-- 25mm Airburst
+ATT = {}
+
+ATT.PrintName = "Airburst"
+ATT.FullName = "25mm Airburst Grenades"
+ATT.Icon = Material("entities/tacrp_att_ammo_40mm_concussion.png", "mips smooth")
+ATT.Description = "Fragmentation grenades exploding mid-air. Large radius but less lethal."
+ATT.Pros = {"att.procon.airburst", "att.procon.radius"}
+ATT.Cons = {"stat.damage"}
+
+ATT.Category = "ammo_25mm"
+
+ATT.SortOrder = 2
+
+ATT.Override_ShootEnt = "tacrp_proj_25mm_airburst"
+ATT.Mult_ShootEntForce = 1
 
 ATT.Override_Damage_Max = 75
 ATT.Override_Damage_Min = 75
 
-TacRP.LoadAtt(ATT, "ammo_25mm_stun")
+TacRP.LoadAtt(ATT, "ammo_25mm_airburst")

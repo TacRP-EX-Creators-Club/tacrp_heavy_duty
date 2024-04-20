@@ -24,8 +24,6 @@ ENT.ExplodeSounds = {
     "^TacRP/weapons/grenade/frag_explode-3.wav",
 }
 
-ENT.AudioLoop = "TacRP/weapons/rpg7/rocket_flight-1.wav"
-
 ENT.SmokeTrail = true
 
 function ENT:Detonate()
@@ -37,7 +35,7 @@ function ENT:Detonate()
     dmg:SetInflictor(self)
     dmg:SetDamageType(DMG_SONIC)
     dmg:SetDamagePosition(self:GetPos())
-    dmg:SetDamage(70 * mult)
+    dmg:SetDamage(50 * mult)
     util.BlastDamageInfo(dmg, self:GetPos(), 256)
     dmg:SetDamage(5)
     util.BlastDamageInfo(dmg, self:GetPos(), 512)

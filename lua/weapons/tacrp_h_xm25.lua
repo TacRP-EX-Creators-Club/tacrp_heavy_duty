@@ -65,7 +65,7 @@ SWEP.Num = 1
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 110
+SWEP.RPM = 120
 
 SWEP.Spread = 0.01
 
@@ -169,9 +169,10 @@ SWEP.ReloadUpInTime = 2
 
 local path = "tacint_shark/xm25/"
 
-SWEP.Sound_Shoot = "^" .. path .. "40mm_fire.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
 
 SWEP.Vol_Shoot = 130
+SWEP.Pitch_Shoot = 105
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
