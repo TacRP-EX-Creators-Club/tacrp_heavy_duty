@@ -169,7 +169,7 @@ SWEP.ReloadUpInTime = 2
 
 local path = "tacint_shark/xm25/"
 
-SWEP.Sound_Shoot = "^" .. path .. "40mm_fire.wav"
+SWEP.Sound_Shoot = "^" .. path .. "fire.wav"
 
 SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
