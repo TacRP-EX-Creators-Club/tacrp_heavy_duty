@@ -4,26 +4,25 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Milkor MGL"
+SWEP.PrintName = "HK XM25 CDTE"
 SWEP.Category = "Tactical RP (Special)"
 
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "6Launcher"
 
-SWEP.Description = "Multi-grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
-
-SWEP.Trivia_Caliber = "40x46mm"
-SWEP.Trivia_Manufacturer = "Milkor (Pty) Ltd"
-SWEP.Trivia_Year = "1983"
+SWEP.Description = "Bullpup grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
+SWEP.Trivia_Caliber = "25x40mm"
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
+SWEP.Trivia_Year = "2010"
 
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
-Assets: Call of Duty: Black Ops 2
+Assets: Call of Duty: Modern Warfare 3 (2011)
 Animation: Tactical Intervention, edited by speedonerd
 ]]
 
-SWEP.ViewModel = "models/weapons/tacint_shark/v_m32.mdl"
-SWEP.WorldModel = "models/weapons/tacint_shark/w_m32.mdl"
+SWEP.ViewModel = "models/weapons/tacint_shark/v_xm25.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_xm25.mdl"
 
 SWEP.NoRanger = true
 
@@ -32,14 +31,14 @@ SWEP.SlotAlt = 4
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_TTT] = {
-        RPM = 65,
+        RPM = 75,
     },
 }
 
 // "ballistics"
 
-SWEP.ShootEnt = "tacrp_proj_40mm_he"
-SWEP.ShootEntForce = 4000
+SWEP.ShootEnt = "tacrp_proj_25mm_he"
+SWEP.ShootEntForce = 3000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 1,
@@ -53,12 +52,12 @@ SWEP.BodyDamageMultipliers = {
 }
 
 
-SWEP.Damage_Max = 200 // just to fool the ratings
-SWEP.Damage_Min = 200
+SWEP.Damage_Max = 100 // just to fool the ratings
+SWEP.Damage_Min = 100
 SWEP.Range_Max = 5000
 SWEP.Range_Min = 2000
 
-SWEP.MuzzleVelocity = 4000
+SWEP.MuzzleVelocity = 3000
 
 SWEP.Num = 1
 
@@ -66,42 +65,42 @@ SWEP.Num = 1
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 90
+SWEP.RPM = 110
 
-SWEP.Spread = 0.015
+SWEP.Spread = 0.01
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 2.5
-SWEP.RecoilResetTime = 0.5 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 2
+SWEP.RecoilMaximum = 2
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 4
+SWEP.RecoilVisualKick = 3
 
-SWEP.RecoilKick = 12
+SWEP.RecoilKick = 8
 
 SWEP.RecoilSpreadPenalty = 0.03
-SWEP.HipFireSpreadPenalty = 0.075
-SWEP.PeekPenaltyFraction = 0.2
-SWEP.RecoilStability = 0.5
+SWEP.HipFireSpreadPenalty = 0.08
+SWEP.PeekPenaltyFraction = 0.25
+SWEP.RecoilStability = 0.3
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.75
-SWEP.ShootingSpeedMult = 0.25
-SWEP.SightedSpeedMult = 0.3
+SWEP.ShootingSpeedMult = 0.5
+SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.25
 
-SWEP.AimDownSightsTime = 0.5
-SWEP.SprintToFireTime = 0.65
+SWEP.AimDownSightsTime = 0.42
+SWEP.SprintToFireTime = 0.45
 
-SWEP.Sway = 1.5
+SWEP.Sway = 2
 SWEP.ScopedSway = 0.3
 
-SWEP.FreeAimMaxAngle = 9
+SWEP.FreeAimMaxAngle = 7
 
 // hold types
 
@@ -113,7 +112,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 
 SWEP.PassiveAng = Angle(0, 5, 0)
-SWEP.PassivePos = Vector(1.5, -7, -8)
+SWEP.PassivePos = Vector(0, -3, -7)
 
 SWEP.BlindFireAng = Angle(0, 0, -30)
 SWEP.BlindFirePos = Vector(1, -3, 0)
@@ -131,21 +130,21 @@ SWEP.SightAng = Angle(-0.7, 2, 2)
 SWEP.SightPos = Vector(-3.8, -3, -5.5)
 
 SWEP.CustomizeAng = Angle(35, 12, 0)
-SWEP.CustomizePos = Vector(9, -6, -8)
+SWEP.CustomizePos = Vector(4, 0, -8)
 
 SWEP.HolsterVisible = true
 SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK2
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.Sway = 3
-SWEP.ScopedSway = 0.4
+SWEP.Sway = 1.5
+SWEP.ScopedSway = 0.25
 
 // scope
 
 SWEP.Scope = true
 SWEP.ScopeOverlay = Material("tacrp/scopes/scopexm25.png", "mips smooth") // Material("path/to/overlay")
-SWEP.ScopeFOV = 90 / 2.5
+SWEP.ScopeFOV = 90 / 2
 SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
@@ -155,12 +154,12 @@ SWEP.CanMeleeAttack = true
 
 // reload
 
-SWEP.ClipSize = 6
+SWEP.ClipSize = 5
 SWEP.Ammo = "smg1_grenade"
 
-SWEP.ReloadTimeMult = 1.8
-SWEP.DropMagazineModel = false
-SWEP.DropMagazineImpact = ""
+SWEP.ReloadTimeMult = 1.7
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/xm25.mdl"
+SWEP.DropMagazineImpact = "metal"
 
 SWEP.DropMagazineTime = 0.8
 
@@ -168,7 +167,7 @@ SWEP.ReloadUpInTime = 2
 
 // sounds
 
-local path = "tacint_shark/m32/"
+local path = "tacint_shark/xm25/"
 
 SWEP.Sound_Shoot = "^" .. path .. "40mm_fire.wav"
 
@@ -188,9 +187,9 @@ SWEP.MuzzleEffect = "muzzleflash_m79"
 
 SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster",
-    ["fire"] = "fire",
-    ["blind_fire"] = "fire",
-    ["melee"] = "melee1",
+    ["fire"] = "fire1_M",
+    ["blind_fire"] = {"blind_shoot1"},
+    ["melee"] = {"melee1", "melee2"},
     ["reload"] = "reload",
 }
 
@@ -201,7 +200,7 @@ SWEP.DeployTimeMult = 2.25
 SWEP.Attachments = {
     [1] = {
         PrintName = "Ammo",
-        Category = "ammo_40mm",
+        Category = "ammo_25mm",
         AttachSound = "TacRP/weapons/m320/shell_in-1.wav",
         DetachSound = "TacRP/weapons/m320/shell_out-1.wav",
     },
@@ -228,10 +227,9 @@ local function addsound(name, spath)
     })
 end
 
-addsound("tacint_m32.Open", path .. "raise.wav")
-addsound("tacint_m32.Eject", path .. "open.wav")
-addsound("tacint_m32.Insert", path .. "loading.wav")
-addsound("tacint_m32.Close", path .. "close.wav")
+addsound("tacint_xm25.Remove_Clip", path .. "magout.wav")
+addsound("tacint_xm25.Insert_Clip", path .. "magin.wav")
+addsound("tacint_xm25.Bolt_LockBack", path .. "bolt.wav")
 
 SWEP.AutoSpawnable = false
 if engine.ActiveGamemode() == "terrortown" then
