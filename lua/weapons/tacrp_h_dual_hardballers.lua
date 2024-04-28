@@ -8,7 +8,7 @@ SWEP.PrintName = "Dual Silverballers"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "3Dual Wield"
+SWEP.SubCatType = "3Akimbo"
 
 SWEP.Description = "A pair of sleek longslide pistols, a high profile choice for low profile assassins.\nGood range for akimbos - if you can hit anything, that is."
 SWEP.Description_Quote = "\"I'll seek justice for myself. I'll choose the truth I like.\""
