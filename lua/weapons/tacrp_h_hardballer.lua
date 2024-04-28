@@ -8,7 +8,7 @@ SWEP.PrintName = "AMT Hardballer"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "1Pistol"
 
 SWEP.Description = "Long-slide pistol with stainless steel construction. Accurate and hits hard at range."
 SWEP.Description_Quote = "\"I'll be back...\""
