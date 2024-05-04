@@ -246,7 +246,7 @@ SWEP.Attachments = {
         Pos_WM = Vector(13.5, 0.5, 1.7),
         Ang_WM = Angle(0, 0, -90),
     },
-    [3] = {
+    [2] = {
         PrintName = "Tactical",
         Category = "tactical",
         WMBone = "Box01",
@@ -260,7 +260,7 @@ SWEP.Attachments = {
         Pos_WM = Vector(30, 2, 0.85),
         Ang_WM = Angle(0, 0, 180),
     },
-    [4] = {
+    [3] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_sling", "acc_duffle", "acc_bipod"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
@@ -272,7 +272,7 @@ SWEP.Attachments = {
         --AttachSound = "TacRP/weapons/flashlight_on.wav",
         --DetachSound = "TacRP/weapons/flashlight_off.wav",
     --},
-    [8] = {
+    [4] = {
         PrintName = "Perk",
         Category = {"perk", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
