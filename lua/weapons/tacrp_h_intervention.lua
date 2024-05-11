@@ -8,7 +8,7 @@ SWEP.PrintName = "CheyTac Intervention"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "9Anti-Materiel Rifle"
+SWEP.SubCatType = "7Sniper Rifle"
 
 SWEP.Description = "Futuristic-looking sniper-AMR hybrid with excellent armor penetration and high muzzle velocity. \nEquipped with a 12x scope by default."
 SWEP.Description_Quote = "1v1 me on rust m8 i bet u cant even quickscope u fkn noob"
