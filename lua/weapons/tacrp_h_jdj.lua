@@ -5,10 +5,10 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "SSK .950 JDJ"
-SWEP.Category = "Tactical RP"
+SWEP.Category = "Tactical RP (Special)"
 
-SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "7Sniper Rifle"
+SWEP.SubCatTier = "9Special"
+SWEP.SubCatType = "7Special Weapon"
 
 SWEP.Description = "Unfathomly large \"hunting rifle\" shooting a ludicrously powerful round. I don't know how you're even able to shoulder-fire this thing. \nEquipped with a 10x scope by default."
 
