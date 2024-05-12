@@ -8,7 +8,7 @@ SWEP.PrintName = "H&H Double Rifle"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "9Sporter"
+SWEP.SubCatType = "5Sporter"
 
 SWEP.Description = "Boutique double-barreled big-game hunting rifle, firing a round designed to fell elephants. Despite its looks, it is not a shotgun."
 SWEP.Description_Quote = "\"Life is a great adventure, accept it in such a spirit.\""
