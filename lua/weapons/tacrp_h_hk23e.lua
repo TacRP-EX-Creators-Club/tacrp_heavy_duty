@@ -8,7 +8,7 @@ SWEP.PrintName = "HK HK21E"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "4Machine Gun"
+SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "Belt-fed machine gun variant of a classic battle rifle. Features burst-fire."
 
