@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Pancor Jackhammer"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "One-of-one bulky automatic shotgun with a cylinder magazine. Quite heavy and a bit unreliable."
