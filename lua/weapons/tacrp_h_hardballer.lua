@@ -248,6 +248,8 @@ SWEP.LastShot = true
 
 // attachments
 
+SWEP.NoTactical = true
+
 SWEP.AttachmentElements = {
     ["lazur"] = {
         BGs_VM = {
