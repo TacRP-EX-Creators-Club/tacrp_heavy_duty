@@ -254,5 +254,5 @@ if engine.ActiveGamemode() == "terrortown" then
 end
 
 function SWEP:ShouldAutoReload()
-    return !IsValid(self:GetCornershotEntity())
+    return false
 end
