@@ -40,7 +40,8 @@ SWEP.BalanceStats = {
         Range_Min = 500,
         Range_Max = 2000,
 
-        RPM = 150,
+        RPM = 210,
+        RPMMultSemi = 0.7,
         ShootTimeMult = 0.8,
 
         BodyDamageMultipliers = {
