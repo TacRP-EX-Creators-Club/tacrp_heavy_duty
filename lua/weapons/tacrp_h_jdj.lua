@@ -27,7 +27,7 @@ Animations: Tactical Intervention, edited by speedonerd
 SWEP.ViewModel = "models/weapons/tacint_shark/v_950jdj.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_950jdj.mdl"
 
-SWEP.Slot = 3
+SWEP.Slot = 2
 SWEP.SlotAlt = 4
 
 SWEP.BalanceStats = {
