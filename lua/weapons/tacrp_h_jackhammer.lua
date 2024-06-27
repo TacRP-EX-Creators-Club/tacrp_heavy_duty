@@ -158,12 +158,12 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 SWEP.ClipSize = 10
 SWEP.Ammo = "buckshot"
 
-SWEP.ReloadTimeMult = 1.6
+SWEP.ReloadTimeMult = 1.7
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/jackhammer.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 1.45
-SWEP.DropMagazineTime = 0.8
+SWEP.ReloadUpInTime = 1.3
+SWEP.DropMagazineTime = 0.5
 
 // sounds
 
@@ -199,7 +199,22 @@ SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster"
 }
 
-SWEP.DeployTimeMult = 2.2
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -0.2, -0.12),
+    vm_ang = Angle(0, 0.25, 0),
+    t = 0.1,
+    tmax = 0.1,
+    bones = {
+        {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -3),
+            t0 = 0.01,
+            t1 = 0.08,
+        },
+    },
+}
+
+SWEP.DeployTimeMult = 2.4
 
 // attachments
 
