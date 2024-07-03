@@ -87,12 +87,12 @@ SWEP.BodyDamageMultipliers = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 35
-SWEP.Damage_Min = 25
-SWEP.Range_Min = 1200
-SWEP.Range_Max = 4000
+SWEP.Damage_Max = 40
+SWEP.Damage_Min = 28
+SWEP.Range_Min = 1800
+SWEP.Range_Max = 5000
 SWEP.Penetration = 10
-SWEP.ArmorPenetration = 0.8
+SWEP.ArmorPenetration = 0.75
 
 SWEP.MuzzleVelocity = 17500
 
@@ -109,14 +109,15 @@ SWEP.Spread = 0.01
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 25
-SWEP.RecoilResetTime = 0.15
-SWEP.RecoilDissipationRate = 40
-SWEP.RecoilFirstShotMult = 2
+SWEP.RecoilMaximum = 38
+SWEP.RecoilResetTime = 0.2
+SWEP.RecoilDissipationRate = 33
+SWEP.RecoilFirstShotMult = 0.1
 
-SWEP.RecoilVisualKick = 1
+SWEP.RecoilVisualKick = 0.5
 
-SWEP.RecoilKick = 5
+SWEP.RecoilKick = 7
+SWEP.RecoilStability = 1
 
 SWEP.HipFireSpreadPenalty = 0.025
 SWEP.RecoilSpreadPenalty = 0.0009
@@ -126,7 +127,7 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.85
+SWEP.MoveSpeedMult = 0.8
 SWEP.ShootingSpeedMult = 0.4
 SWEP.SightedSpeedMult = 0.5
 
@@ -202,7 +203,7 @@ SWEP.DefaultBodygroups = "000007"
 local path = "TacRP/weapons/mg4/"
 local path1 = "tacint_shark/hk23e/"
 
-SWEP.Sound_Shoot = "^" .. "tacint_shark/scarh/" .. "scarh-1.wav"
+SWEP.Sound_Shoot = "^" .. "tacint_shark/weapons/g3/" .. "g3sg1_1.wav"
 SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -340,6 +341,6 @@ addsound("TacInt_hk23e.Clip_Out",           path1 .. "clipout.wav")
 addsound("TacInt_hk23e.Clip_In",            path1 .. "clipin.wav")
 addsound("TacInt_hk23e.bolt_release",       path1 .. "boltforward.ogg")
 addsound("TacInt_hk23e.bolt_back",          path1 .. "boltback.ogg")
-addsound("TacInt_hk23e.bolt_forward",       path1 .. "boltforward.ogg")
+addsound("TacInt_hk23e.bolt_forward",       path1 .. "boltforward1.ogg")
 addsound("TacInt_hk23e.insertbullets",      path1 .. "belt.ogg")
 addsound("TacInt_hk23e.deploy",             path .. "deploy-1.wav")
