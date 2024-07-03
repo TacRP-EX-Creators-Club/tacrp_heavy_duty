@@ -11,6 +11,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Machine Gun"
 
 SWEP.Description = "Belt-fed machine gun variant of a classic battle rifle. Features burst-fire."
+SWEP.Description_Quote = "\"Now I can solve up to 800 problems a minute!\""
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
@@ -103,8 +104,10 @@ SWEP.RunawayBurst = true
 SWEP.PostBurstDelay = 0.2
 
 SWEP.RPM = 750
+SWEP.RPMMultBurst = 900/750
+SWEP.PostBurstDelay = 0.12
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0.0085
 
 SWEP.ShootTimeMult = 0.5
 
