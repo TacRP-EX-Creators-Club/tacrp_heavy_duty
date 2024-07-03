@@ -163,8 +163,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-0.11, -0.6, 0)
-SWEP.SightPos = Vector(-4.55, -7.5, -3.7)
+SWEP.SightAng = Angle(0, 0, 0)
+SWEP.SightPos = Vector(-4.48, -5.5, -3.55)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.125)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -202,7 +202,7 @@ SWEP.DefaultBodygroups = "000007"
 local path = "TacRP/weapons/mg4/"
 local path1 = "tacint_shark/hk23e/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. "tacint_shark/scarh/" .. "scarh-1.wav"
 SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -262,14 +262,14 @@ SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium"},
-        Bone = "ValveBiped.feed_cover",
+        Bone = "ValveBiped.MG4_root",
         InstalledElements = {"sights"},
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1.1,
-        Pos_VM = Vector(-0.75, 0, -3),
-        Pos_WM = Vector(8, 1.15, -7),
+        Pos_VM = Vector(-7.5, 0, 6),
         Ang_VM = Angle(90, 0, 0),
+        Pos_WM = Vector(8, 1.15, -7),
         Ang_WM = Angle(0, 0, 180),
     },
     [2] = {
@@ -278,7 +278,7 @@ SWEP.Attachments = {
         Bone = "ValveBiped.MG4_root",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-5.5, 0, 32),
+        Pos_VM = Vector(-5.2, 0, 33),
         Pos_WM = Vector(33, 1.15, -5.75),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
@@ -290,7 +290,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-5.225, -0.9, 19),
+        Pos_VM = Vector(-5.225, -1.1, 26),
         Pos_WM = Vector(21.5, 2, -5.25),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, 90),
