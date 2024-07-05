@@ -1,4 +1,13 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models\tacint_shark\weapons\hk23e\hk23_2_done"
+	$bumpmap "dev/flat_normal"
+	
+	$envmap env_cubemap
+	$envmaptint "[.01 .01 .01]"
+	
+	$phong 1
+	$phongboost 0.01
+	$phongexponent 30
+	$phongfresnelranges		"[1 4 7]"
 }

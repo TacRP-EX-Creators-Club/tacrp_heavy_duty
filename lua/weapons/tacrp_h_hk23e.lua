@@ -120,7 +120,7 @@ SWEP.RecoilFirstShotMult = 0.5
 SWEP.RecoilVisualKick = 1
 
 SWEP.RecoilKick = 7
-SWEP.RecoilStability = 0.1
+SWEP.RecoilStability = 0.2
 
 SWEP.HipFireSpreadPenalty = 0.025
 SWEP.RecoilSpreadPenalty = 0.00875
@@ -344,6 +344,7 @@ addsound("TacInt_hk23e.Clip_Out",           path1 .. "clipout.wav")
 addsound("TacInt_hk23e.Clip_In",            path1 .. "clipin.wav")
 addsound("TacInt_hk23e.bolt_release",       path1 .. "boltforward.ogg")
 addsound("TacInt_hk23e.bolt_back",          path1 .. "boltback.ogg")
-addsound("TacInt_hk23e.bolt_forward",       path1 .. "boltforward1.ogg")
+addsound("TacInt_hk23e.chainjiggy",         path1 .. "chainjiggy.ogg")
+addsound("TacInt_hk23e.bolt_forward",       path1 .. "boltforward.ogg")
 addsound("TacInt_hk23e.insertbullets",      path1 .. "belt.ogg")
 addsound("TacInt_hk23e.deploy",             path .. "deploy-1.wav")
