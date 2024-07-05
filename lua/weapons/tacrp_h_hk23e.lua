@@ -187,7 +187,7 @@ SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mg4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
-SWEP.ReloadUpInTime = 3.5
+SWEP.ReloadUpInTime = 5.5
 SWEP.DropMagazineTime = 0.7
 
 SWEP.BulletBodygroups = {
