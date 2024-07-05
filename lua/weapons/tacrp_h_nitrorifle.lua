@@ -173,6 +173,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 2
 SWEP.Ammo = "357"
+SWEP.Ammo_Expanded = "ti_sniper"
 
 SWEP.ReloadUpInTime = 1.8
 
