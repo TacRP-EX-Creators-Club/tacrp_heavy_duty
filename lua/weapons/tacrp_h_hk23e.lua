@@ -206,7 +206,7 @@ SWEP.DefaultBodygroups = "000007"
 local path = "TacRP/weapons/mg4/"
 local path1 = "tacint_shark/hk23e/"
 
-SWEP.Sound_Shoot = "^" .. "tacint_shark/weapons/g3/" .. "g3sg1_1.wav"
+SWEP.Sound_Shoot = "^" .. "tacint_rz/weapons/hk21/" .. "fire.wav"
 SWEP.Sound_Shoot_Silenced = "TacRP/weapons/g36k/g36k_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
