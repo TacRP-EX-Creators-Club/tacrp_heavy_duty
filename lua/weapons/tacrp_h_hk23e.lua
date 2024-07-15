@@ -1,5 +1,5 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = true
+SWEP.Spawnable = false
 
 AddCSLuaFile()
 
@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Machine Gun"
 
-SWEP.Description = "Belt-fed machine gun variant of a classic battle rifle. Features burst-fire."
+SWEP.Description = "Belt-fed machine gun variant of a classic battle rifle. Accurate and seriously powerful, but hard to use while on the move."
 SWEP.Description_Quote = "\"Now I can solve up to 800 problems a minute!\""
 
 SWEP.Trivia_Caliber = "7.62x51mm"
@@ -22,7 +22,7 @@ SWEP.Credits = [[
 Model: Twinke Masta
 Textures: NZ-Reason
 Animations: Tactical Intervention, edited by Fesiug
-Sounds: Treyarch
+Sounds: Treyarch, rzen1th
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_hk23e_beta10.mdl"
@@ -33,8 +33,12 @@ SWEP.SlotAlt = 3
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 28,
-        Damage_Min = 22,
+        Damage_Max = 32,
+        Damage_Min = 20,
+
+        Spread = 0.009,
+
+        RecoilKick = 10,
 
         ClipSize = 75,
     },
@@ -58,25 +62,13 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.75,
             [HITGROUP_GEAR] = 0.9
         },
-    },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 19,
-        Damage_Min = 14,
-
-        ClipSize = 100,
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {
-        Description = "Balanced light machine gun that can put down some serious firepower.",
-        ClipSize = 75,
-        RecoilSpreadPenalty = 0.0013,
-        ReloadTimeMult = 1.1
     }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.MachineGun
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -88,14 +80,14 @@ SWEP.BodyDamageMultipliers = {
 
 // "ballistics"
 
-SWEP.Damage_Max = 40
-SWEP.Damage_Min = 28
-SWEP.Range_Min = 1800
-SWEP.Range_Max = 5000
+SWEP.Damage_Max = 35
+SWEP.Damage_Min = 25
+SWEP.Range_Min = 1500
+SWEP.Range_Max = 4500
 SWEP.Penetration = 10
-SWEP.ArmorPenetration = 0.75
+SWEP.ArmorPenetration = 0.8
 
-SWEP.MuzzleVelocity = 17500
+SWEP.MuzzleVelocity = 22200
 
 // misc. shooting
 
@@ -104,25 +96,26 @@ SWEP.RunawayBurst = true
 SWEP.PostBurstDelay = 0.2
 
 SWEP.RPM = 750
-SWEP.RPMMultBurst = 900/750
+SWEP.RPMMultBurst = 900 / 750
 SWEP.PostBurstDelay = 0.12
 
-SWEP.Spread = 0.0085
+SWEP.Spread = 0.004
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 38
+SWEP.RecoilMaximum = 28
 SWEP.RecoilResetTime = 0.2
 SWEP.RecoilDissipationRate = 33
 SWEP.RecoilFirstShotMult = 0.5
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 7
-SWEP.RecoilStability = 0.2
+SWEP.RecoilKick = 8
+SWEP.RecoilStability = 0.25
 
-SWEP.HipFireSpreadPenalty = 0.025
+SWEP.HipFireSpreadPenalty = 0.035
+SWEP.MoveSpreadPenalty = 0.02
 SWEP.RecoilSpreadPenalty = 0.00875
 SWEP.PeekPenaltyFraction = 0.125
 
@@ -131,14 +124,14 @@ SWEP.CanBlindFire = true
 // handling
 
 SWEP.MoveSpeedMult = 0.8
-SWEP.ShootingSpeedMult = 0.4
+SWEP.ShootingSpeedMult = 0.25
 SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.1
 SWEP.ReloadSpeedMultTime = 1
 
 SWEP.AimDownSightsTime = 0.5
-SWEP.SprintToFireTime = 0.5
+SWEP.SprintToFireTime = 0.55
 
 SWEP.Sway = 2
 SWEP.ScopedSway = 0.75
