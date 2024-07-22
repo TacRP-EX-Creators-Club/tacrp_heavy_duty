@@ -82,7 +82,7 @@ SWEP.LaserQCAttachmentVM = 1
 SWEP.LaserQCAttachmentWM = 1
 SWEP.LaserAlwaysAccurate = true
 SWEP.CanToggle = true
-SWEP.TacticalName = "Laser"
+SWEP.TacticalName = "hint.tac.laser"
 
 // handling
 

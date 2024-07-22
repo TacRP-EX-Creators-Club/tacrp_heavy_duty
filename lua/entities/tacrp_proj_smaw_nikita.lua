@@ -32,7 +32,7 @@ ENT.SteerDelay = 0.5
 ENT.MaxSpeed = 320
 ENT.MinSpeed = 0
 ENT.Acceleration = 320
-ENT.SteerBrake = 2000
+ENT.SteerBrake = 0
 
 ENT.CornershotOffset = Vector()
 ENT.CornershotAngles = Angle()
@@ -70,15 +70,14 @@ function ENT:PhysicsUpdate(phys)
         local p = self:GetAngles().p
         local y = self:GetAngles().y
 
-        local diff = tgtang:IsZero() and 0 or 1000
         p = math.ApproachAngle(p, p + tgtang.p, FrameTime() * self.SteerSpeed)
         y = math.ApproachAngle(y, y + tgtang.y, FrameTime() * self.SteerSpeed)
 
         self:SetAngles(Angle(p, y, 0))
-        phys:SetVelocityInstantaneous(self:GetForward() * math.Clamp(v:Length() + (self.Acceleration - diff) * FrameTime(), self.MinSpeed, self.MaxSpeed))
-    else
-        phys:SetVelocityInstantaneous(self:GetForward() * math.Clamp(v:Length() + self.Acceleration * FrameTime(), self.MinSpeed, self.MaxSpeed))
     end
+
+    phys:SetVelocityInstantaneous(self:GetForward() * math.Clamp(v:Length() + self.Acceleration * FrameTime(), self.MinSpeed, self.MaxSpeed))
+
 end
 
 function ENT:Detonate()

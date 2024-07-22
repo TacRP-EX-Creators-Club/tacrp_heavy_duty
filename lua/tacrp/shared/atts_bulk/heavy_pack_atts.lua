@@ -114,7 +114,7 @@ ATT.Mult_SprintToFireTime = 1.25
 ATT.Mult_ScopedSway = 1.5
 ATT.Add_FreeAimMaxAngle = -2
 
-ATT.TacticalName = "Laser"
+ATT.TacticalName = "hint.tac.laser"
 
 ATT.InstalledElements = {"lazur"}
 
@@ -128,8 +128,8 @@ ATT.PrintName = "Tri-Attack"
 ATT.FullName = "SMAW Tri-Attack Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_tri.png", "mips smooth")
 ATT.Description = "A trio of fast and maneuverable anti-infantry missiles."
-ATT.Pros = {"att.procon.3proj", "att.procon.rocket.speed", "att.procon.rocket.steer"}
-ATT.Cons = {"stat.spread", "att.procon.armdelay", "att.procon.rocket.payload"}
+ATT.Pros = {"att.procon.3proj", "att.procon.proj.turn"}
+ATT.Cons = {"stat.spread", "stat.damage", "att.procon.radius"}
 
 ATT.Category = "ammo_smaw"
 
@@ -157,8 +157,8 @@ ATT.PrintName = "Nikita"
 ATT.FullName = "SMAW Nikita Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_nikita.png", "mips smooth")
 ATT.Description = "A very slow manually controllable rocket."
-ATT.Pros = {"att.procon.rocket.nikita", "att.procon.rocket.steer"}
-ATT.Cons = {"att.procon.rocket.speed", "att.procon.armdelay"}
+ATT.Pros = {"att.procon.nikita", "att.procon.proj.turn"}
+ATT.Cons = {"att.procon.proj.speed", "att.procon.armdelay"}
 
 ATT.Category = "ammo_smaw"
 
@@ -177,8 +177,8 @@ ATT.PrintName = "Tandem"
 ATT.FullName = "SMAW Tandem Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_tandem.png", "mips smooth")
 ATT.Description = "A powerful anti-tank rocket that takes time to accelerate."
-ATT.Pros = {"att.procon.rocket.impact", "att.procon.rocket.speed"}
-ATT.Cons = {"att.procon.rocket.payload", "att.procon.rocket.steer", "stat.muzzlevelocity"}
+ATT.Pros = {"att.procon.proj.direct", "att.procon.proj.speed"}
+ATT.Cons = {"att.procon.radius", "stat.damage", "att.procon.proj.turn", "stat.muzzlevelocity"}
 
 ATT.Category = "ammo_smaw"
 

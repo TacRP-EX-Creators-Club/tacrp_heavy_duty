@@ -16,7 +16,7 @@ ENT.ExplodeOnDamage = false
 ENT.ExplodeUnderwater = true
 
 ENT.Delay = 0
-ENT.SafetyFuse = 0.15
+ENT.SafetyFuse = 0.1
 
 ENT.AudioLoop = "TacRP/weapons/rpg7/rocket_flight-1.wav"
 
@@ -26,13 +26,12 @@ ENT.FlareColor = Color(200, 255, 255)
 ENT.FlareSizeMin = 48
 ENT.FlareSizeMax = 64
 
-ENT.SteerSpeed = 120
-ENT.SteerDelay = 0.15
+ENT.SteerSpeed = 180
+ENT.SteerDelay = 0.3
 
 ENT.MaxSpeed = 4000
-ENT.Acceleration = 4000
-ENT.SteerBrake = 15000
-ENT.MinSpeed = 1000
+ENT.Acceleration = 3000
+ENT.SteerBrake = 0
 
 ENT.AlwaysSteer = true
 
