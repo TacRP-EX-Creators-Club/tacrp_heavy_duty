@@ -178,15 +178,42 @@ ATT.FullName = "SMAW Tandem Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_tandem.png", "mips smooth")
 ATT.Description = "A powerful anti-tank rocket that takes time to accelerate."
 ATT.Pros = {"att.procon.proj.direct", "att.procon.proj.speed"}
-ATT.Cons = {"att.procon.radius", "stat.damage", "att.procon.proj.turn", "stat.muzzlevelocity"}
+ATT.Cons = {"att.procon.radius", "stat.damage", "att.procon.proj.turn"}
 
 ATT.Category = "ammo_smaw"
 
 ATT.SortOrder = 1
 
+ATT.Mult_ShootEntForce = 0.4
 ATT.Override_ShootEnt = "tacrp_proj_smaw_tandem"
 
 TacRP.LoadAtt(ATT, "ammo_smaw_tandem")
+
+-- SMAW Agile
+ATT = {}
+
+ATT.PrintName = "Hummingbird"
+ATT.FullName = "SMAW Hummingbird Mini-Rockets"
+ATT.Icon = Material("entities/tacrp_att_smaw_agile.png", "mips smooth")
+ATT.Description = "Aerodynamic mini-rockets that accelerate as they turn."
+ATT.Pros = {"stat.clipsize", "att.procon.proj.turn"}
+ATT.Cons = {"stat.damage", "att.procon.proj.speed", "stat.spread"}
+
+ATT.Category = "ammo_smaw"
+
+ATT.SortOrder = 4
+
+ATT.Mult_Spread = 3
+
+ATT.Override_Damage_Max = 70
+ATT.Override_Damage_Min = 70
+
+ATT.Override_Ammo = "smg1_grenade"
+ATT.Override_ClipSize = 5
+
+ATT.Override_ShootEnt = "tacrp_proj_smaw_agile"
+
+TacRP.LoadAtt(ATT, "ammo_smaw_agile")
 
 -- 25mm Stunstorm
 ATT = {}
