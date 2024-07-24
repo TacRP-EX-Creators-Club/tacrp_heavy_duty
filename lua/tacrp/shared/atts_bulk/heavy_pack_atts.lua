@@ -243,7 +243,7 @@ ATT = {}
 
 ATT.PrintName = "Airburst"
 ATT.FullName = "25mm Airburst Grenades"
-ATT.Icon = Material("entities/tacrp_att_ammo_40mm_concussion.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_ammo_40mm_ratshot.png", "mips smooth")
 ATT.Description = "Fragmentation grenades exploding mid-air. Large radius but less lethal."
 ATT.Pros = {"att.procon.airburst", "att.procon.radius"}
 ATT.Cons = {"stat.damage"}
@@ -259,3 +259,41 @@ ATT.Override_Damage_Max = 75
 ATT.Override_Damage_Min = 75
 
 TacRP.LoadAtt(ATT, "ammo_25mm_airburst")
+
+
+-- 25mm Flechette
+ATT = {}
+
+ATT.PrintName = "Flechette"
+ATT.FullName = "25mm Flechette Grenades"
+ATT.Icon = Material("entities/tacrp_att_ammo_40mm_heat.png", "mips smooth")
+ATT.Description = "Flat-top grenade packing accurate flechette darts."
+ATT.Pros = {"att.procon.direct"}
+ATT.Cons = {"att.procon.noexp"}
+
+ATT.Category = "ammo_25mm"
+
+ATT.SortOrder = 3
+
+ATT.Override_ShootEnt = false
+
+ATT.NoRanger = false
+
+ATT.Override_Damage_Max = 22
+ATT.Override_Damage_Min = 8
+ATT.Override_Num = 8
+ATT.Override_Range_Min = 400
+ATT.Override_Range_Max = 2400
+
+ATT.Override_Spread = 0.012
+ATT.Override_ShotgunPelletSpread = 0.015
+
+ATT.Override_HipFireSpreadPenalty = 0.03
+ATT.Override_MidAirSpreadPenalty = 0
+
+ATT.Override_MuzzleVelocity = 12000
+
+ATT.Override_Sound_ShootAdd = "^TacRP/weapons/m4star10/fire-2.wav"
+ATT.Override_Pitch_Shoot = 108
+
+TacRP.LoadAtt(ATT, "ammo_25mm_buckshot")
