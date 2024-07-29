@@ -32,7 +32,7 @@ function ENT:Initialize()
     BaseClass.Initialize(self)
     if SERVER then
         self:SetTrigger(true)
-        self:UseTriggerBounds(true, 96)
+        self:UseTriggerBounds(true, 128)
     end
 end
 
@@ -44,12 +44,12 @@ end
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner() or self
-    local mult = self.NPCDamage and 0.5 or 1
+    local mult = (self.NPCDamage and 0.5 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
     if engine.ActiveGamemode() == "terrortown" then
-        util.BlastDamage(self, attacker, self:GetPos(), 300, 30)
+        util.BlastDamage(self, attacker, self:GetPos(), 350, 40 * mult)
     else
-        util.BlastDamage(self, attacker, self:GetPos(), 350, 75 * mult)
+        util.BlastDamage(self, attacker, self:GetPos(), 400, 80 * mult)
     end
 
     local fx = EffectData()

@@ -80,57 +80,18 @@ function ENT:PhysicsUpdate(phys)
 
 end
 
-function ENT:Detonate()
-    local attacker = self.Attacker or self:GetOwner()
-
-    if self.NPCDamage then
-        util.BlastDamage(self, attacker, self:GetPos(), 328, 120)
-    else
-        util.BlastDamage(self, attacker, self:GetPos(), 328, 250)
-        self:FireBullets({
-            Attacker = attacker,
-            Damage = 600,
-            Tracer = 0,
-            Src = self:GetPos(),
-            Dir = self:GetForward(),
-            HullSize = 0,
-            Distance = 32,
-            IgnoreEntity = self,
-            Callback = function(atk, btr, dmginfo)
-                dmginfo:SetDamageType(DMG_AIRBOAT + DMG_SNIPER + DMG_BLAST) // airboat damage for helicopters and LVS vehicles
-                dmginfo:SetDamageForce(self:GetForward() * 22000) // LVS uses this to calculate penetration!
-            end,
-        })
-    end
-
-    local fx = EffectData()
-    fx:SetOrigin(self:GetPos())
-
-    if self:WaterLevel() > 0 then
-        util.Effect("WaterSurfaceExplosion", fx)
-    else
-        util.Effect("Explosion", fx)
-    end
-
-    self:EmitSound("TacRP/weapons/rpg7/explode.wav", 125, 90)
-
-    self:Remove()
-end
-
 hook.Add( "StartCommand", "TacRP_Nikita_StartCommand", function( ply, cmd )
     local wep = ply:GetActiveWeapon()
-    if IsValid(wep) and wep.ArcticTacRP and wep:GetClass() == "tacrp_h_smaw" and wep:GetTactical() and !wep:GetIsSprinting() and !wep:GetReloading() and IsValid(wep:GetOwner()) and wep:GetOwner():IsPlayer() and wep:GetOwner():Alive() then
-        if wep:GetScopeLevel() > 0 then
-            local rocket = wep:GetCornershotEntity()
-            if IsValid(rocket) then
-                local pitch = (cmd:KeyDown( IN_FORWARD ) and 1) or (cmd:KeyDown( IN_BACK ) and -1) or 0
-                local yaw = (cmd:KeyDown( IN_MOVERIGHT ) and 1) or (cmd:KeyDown( IN_MOVELEFT ) and -1) or 0
+    if IsValid(wep) and wep.ArcticTacRP and wep:GetClass() == "tacrp_h_smaw" and wep:GetTactical() and !wep:GetIsSprinting() and !wep:GetReloading() and IsValid(wep:GetOwner()) and wep:GetOwner():IsPlayer() and wep:GetOwner():Alive() and wep:GetScopeLevel() > 0 then
+        local rocket = wep:GetCornershotEntity()
+        if IsValid(rocket) then
+            local pitch = (cmd:KeyDown( IN_FORWARD ) and 1) or (cmd:KeyDown( IN_BACK ) and -1) or 0
+            local yaw = (cmd:KeyDown( IN_MOVERIGHT ) and 1) or (cmd:KeyDown( IN_MOVELEFT ) and -1) or 0
 
-                rocket:SetDesireAng( Angle( -pitch*90*FrameTime(), -yaw*90*FrameTime(), 0 ) )
-                rocket:SetDesireLast( CurTime() )
+            rocket:SetDesireAng( Angle( -pitch*90*FrameTime(), -yaw*90*FrameTime(), 0 ) )
+            rocket:SetDesireLast( CurTime() )
 
-                cmd:ClearMovement()
-            end
+            cmd:ClearMovement()
         end
     end
 end)

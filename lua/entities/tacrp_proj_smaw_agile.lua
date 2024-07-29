@@ -45,11 +45,12 @@ DEFINE_BASECLASS(ENT.Base)
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner()
+    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
     if self.NPCDamage then
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 35)
+        util.BlastDamage(self, attacker, self:GetPos(), 256, 35 * mult)
     else
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 70)
+        util.BlastDamage(self, attacker, self:GetPos(), 256, 75 * mult)
     end
 
     local fx = EffectData()

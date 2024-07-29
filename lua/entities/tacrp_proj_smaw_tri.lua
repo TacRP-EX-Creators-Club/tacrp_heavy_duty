@@ -62,19 +62,20 @@ end
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner()
+    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
     if self.NPCDamage then
-        util.BlastDamage(self, attacker, self:GetPos(), 200, 60)
+        util.BlastDamage(self, attacker, self:GetPos(), 200, 50 * mult)
     else
-        util.BlastDamage(self, attacker, self:GetPos(), 200, 90)
+        util.BlastDamage(self, attacker, self:GetPos(), 200, 90 * mult)
         self:FireBullets({
             Attacker = attacker,
-            Damage = 300,
+            Damage = 300 * mult,
             Tracer = 0,
             Src = self:GetPos(),
             Dir = self:GetForward(),
-            HullSize = 0,
-            Distance = 96,
+            HullSize = 16,
+            Distance = 128,
             IgnoreEntity = self,
             Callback = function(atk, btr, dmginfo)
                 dmginfo:SetDamageType(DMG_AIRBOAT + DMG_SNIPER + DMG_BLAST) // airboat damage for helicopters and LVS vehicles
