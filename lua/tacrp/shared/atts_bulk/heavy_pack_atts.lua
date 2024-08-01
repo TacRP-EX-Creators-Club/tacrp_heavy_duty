@@ -268,10 +268,11 @@ ATT.PrintName = "Flechette"
 ATT.FullName = "25mm Flechette Grenades"
 ATT.Icon = Material("entities/tacrp_att_ammo_40mm_heat.png", "mips smooth")
 ATT.Description = "Flat-top grenade packing accurate flechette darts."
-ATT.Pros = {"att.procon.direct"}
+ATT.Pros = {"att.procon.direct", "stat.spread", "stat.armorpenetration"}
 ATT.Cons = {"att.procon.noexp"}
 
 ATT.Category = "ammo_25mm"
+ATT.Override_Ammo = "buckshot"
 
 ATT.SortOrder = 3
 
@@ -279,11 +280,12 @@ ATT.Override_ShootEnt = false
 
 ATT.NoRanger = false
 
-ATT.Override_Damage_Max = 22
-ATT.Override_Damage_Min = 8
-ATT.Override_Num = 8
-ATT.Override_Range_Min = 400
+ATT.Override_Damage_Max = 18
+ATT.Override_Damage_Min = 10
+ATT.Override_Num = 6
+ATT.Override_Range_Min = 600
 ATT.Override_Range_Max = 2400
+ATT.Override_ArmorPenetration = 0.8
 
 ATT.Override_Spread = 0.012
 ATT.Override_ShotgunPelletSpread = 0.015
@@ -297,3 +299,26 @@ ATT.Override_Sound_ShootAdd = "^TacRP/weapons/m4star10/fire-2.wav"
 ATT.Override_Pitch_Shoot = 108
 
 TacRP.LoadAtt(ATT, "ammo_25mm_buckshot")
+
+
+-- 25mm HEAT
+ATT = {}
+
+ATT.PrintName = "HEAT"
+ATT.FullName = "25mm High-Explosive Anti-Tank Grenades"
+ATT.Icon = Material("entities/tacrp_att_ammo_40mm_lvg.png", "mips smooth")
+ATT.Description = "Grenades designed to penetrate armor and deal direct damage."
+ATT.Pros = {"att.procon.proj.direct", "stat.muzzlevelocity"}
+ATT.Cons = {"att.procon.armdelay", "stat.clipsize", "stat.rpm"}
+
+ATT.Category = "ammo_25mm"
+
+ATT.SortOrder = 4
+
+ATT.Mult_ClipSize = 3 / 5
+ATT.Mult_RPM = 0.66667
+
+ATT.Override_ShootEnt = "tacrp_proj_25mm_heat"
+ATT.Mult_ShootEntForce = 1.5
+
+TacRP.LoadAtt(ATT, "ammo_25mm_heat")
