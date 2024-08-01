@@ -77,17 +77,15 @@ ATT.FullName = "MLG High-Mobility Gamer Rounds"
 
 ATT.Icon = Material("entities/mlg_logo.png", "mips smooth")
 ATT.Description = "yep, this one's going in the montage."
-ATT.Pros = {"stat.quickscope", "stat.midairspread", "stat.hipfirespread"}
-ATT.Cons = {"stat.damage", "stat.range_min"}
+ATT.Pros = {"stat.quickscope", "stat.midairspread"}
+ATT.Cons = {"stat.damage_max", "stat.range_min"}
 
 ATT.SortOrder = 0
 
 ATT.Mult_Range_Min = 0.5
 ATT.Mult_Damage_Max = 0.705
-ATT.Mult_Damage_Min = 0.705
 
 ATT.Override_QuickScopeTime = 0
-ATT.Mult_HipFireSpreadPenalty = 0.6667
 ATT.Mult_MidAirSpreadPenalty = 0
 
 ATT.Category = "m200_mlg"
