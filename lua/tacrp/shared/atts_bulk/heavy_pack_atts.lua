@@ -85,7 +85,7 @@ ATT.SortOrder = 0
 ATT.Mult_Range_Min = 0.5
 ATT.Mult_Damage_Max = 0.705
 
-ATT.Override_QuickScopeTime = 0
+ATT.Mult_QuickScopeSpreadPenalty = 0
 ATT.Mult_MidAirSpreadPenalty = 0
 
 ATT.Category = "m200_mlg"
