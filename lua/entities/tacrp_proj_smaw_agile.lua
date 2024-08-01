@@ -17,7 +17,7 @@ ENT.ExplodeUnderwater = true
 ENT.ExplodeOnImpact = true
 
 ENT.Delay = 6
-ENT.SafetyFuse = 0.2
+ENT.SafetyFuse = 0.4
 
 ENT.AudioLoop = "TacRP/weapons/rpg7/rocket_flight-1.wav"
 
@@ -30,10 +30,10 @@ ENT.FlareSizeMax = 72
 ENT.SteerSpeed = 250
 ENT.SteerDelay = 0.3
 
-ENT.MaxSpeed = 3000
+ENT.MaxSpeed = 4000
 ENT.MinSpeed = 1500
-ENT.Acceleration = -700
-ENT.SteerBrake = -2000
+ENT.Acceleration = -500
+ENT.SteerBrake = -4000
 
 ENT.ExplodeSounds = {
     "^TacRP/weapons/grenade/40mm_explode-1.wav",
@@ -45,12 +45,12 @@ DEFINE_BASECLASS(ENT.Base)
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner()
-    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat()
+    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat() * (self.NPCDamage and 0.5 or 1)
 
-    if self.NPCDamage then
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 35 * mult)
+    if engine.ActiveGamemode() == "terrortown" then
+        util.BlastDamage(self, attacker, self:GetPos(), 256, 40 * mult)
     else
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 75 * mult)
+        util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
     end
 
     local fx = EffectData()

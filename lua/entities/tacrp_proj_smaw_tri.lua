@@ -27,7 +27,7 @@ ENT.FlareSizeMin = 48
 ENT.FlareSizeMax = 64
 
 ENT.SteerSpeed = 180
-ENT.SteerDelay = 0.3
+ENT.SteerDelay = 0.25
 
 ENT.MaxSpeed = 4000
 ENT.Acceleration = 3000
@@ -65,9 +65,9 @@ function ENT:Detonate()
     local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
     if self.NPCDamage then
-        util.BlastDamage(self, attacker, self:GetPos(), 200, 50 * mult)
+        util.BlastDamage(self, attacker, self:GetPos(), 350, 50 * mult)
     else
-        util.BlastDamage(self, attacker, self:GetPos(), 200, 90 * mult)
+        util.BlastDamage(self, attacker, self:GetPos(), 350, 90 * mult)
         self:FireBullets({
             Attacker = attacker,
             Damage = 300 * mult,

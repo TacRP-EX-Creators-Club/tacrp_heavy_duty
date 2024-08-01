@@ -178,7 +178,7 @@ ATT.FullName = "SMAW Tandem Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_tandem.png", "mips smooth")
 ATT.Description = "A powerful anti-tank rocket that takes time to accelerate."
 ATT.Pros = {"att.procon.proj.direct", "att.procon.proj.speed"}
-ATT.Cons = {"att.procon.radius", "stat.damage", "att.procon.proj.turn"}
+ATT.Cons = {"stat.damage", "att.procon.proj.turn"}
 
 ATT.Category = "ammo_smaw"
 
@@ -193,11 +193,11 @@ TacRP.LoadAtt(ATT, "ammo_smaw_tandem")
 ATT = {}
 
 ATT.PrintName = "Hummingbird"
-ATT.FullName = "SMAW Hummingbird Mini-Rockets"
+ATT.FullName = "SMAW Hummingbird Mini-Rocket Pod"
 ATT.Icon = Material("entities/tacrp_att_smaw_agile.png", "mips smooth")
 ATT.Description = "Aerodynamic mini-rockets that accelerate as they turn."
 ATT.Pros = {"stat.clipsize", "att.procon.proj.turn"}
-ATT.Cons = {"stat.damage", "att.procon.proj.speed", "stat.spread"}
+ATT.Cons = {"att.procon.radius", "stat.damage", "att.procon.armdelay"}
 
 ATT.Category = "ammo_smaw"
 
@@ -205,8 +205,8 @@ ATT.SortOrder = 4
 
 ATT.Mult_Spread = 3
 
-ATT.Override_Damage_Max = 70
-ATT.Override_Damage_Min = 70
+ATT.Override_Damage_Max = 100
+ATT.Override_Damage_Min = 100
 
 ATT.Override_Ammo = "smg1_grenade"
 ATT.Override_ClipSize = 5
