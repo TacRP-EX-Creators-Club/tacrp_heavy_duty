@@ -42,7 +42,7 @@ function ENT:StartTouch(ent)
     end
 end
 
-function ENT:Detonate()
+function ENT:Detonate(ent)
     local attacker = self.Attacker or self:GetOwner() or self
     local mult = (self.NPCDamage and 0.25 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
     util.BlastDamage(self, attacker, self:GetPos(), 400, 75 * mult)

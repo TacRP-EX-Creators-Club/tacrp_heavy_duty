@@ -43,7 +43,7 @@ ENT.ExplodeSounds = {
 
 DEFINE_BASECLASS(ENT.Base)
 
-function ENT:Detonate()
+function ENT:Detonate(ent)
     local attacker = self.Attacker or self:GetOwner()
     local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat() * (self.NPCDamage and 0.25 or 1)
     util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
