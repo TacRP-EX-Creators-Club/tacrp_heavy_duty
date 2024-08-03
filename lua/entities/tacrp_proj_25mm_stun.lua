@@ -28,7 +28,7 @@ ENT.SmokeTrail = true
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner() or self
-    local mult = (self.NPCDamage and 0.5 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
+    local mult = (self.NPCDamage and 0.25 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
     local dmg = DamageInfo()
     dmg:SetAttacker(attacker)

@@ -45,13 +45,8 @@ DEFINE_BASECLASS(ENT.Base)
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner()
-    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat() * (self.NPCDamage and 0.5 or 1)
-
-    if engine.ActiveGamemode() == "terrortown" then
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 40 * mult)
-    else
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
-    end
+    local mult = TacRP.ConVars["mult_damage_explosive"]:GetFloat() * (self.NPCDamage and 0.25 or 1)
+    util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
 
     local fx = EffectData()
     fx:SetOrigin(self:GetPos())

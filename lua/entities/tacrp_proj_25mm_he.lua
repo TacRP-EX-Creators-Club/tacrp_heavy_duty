@@ -28,27 +28,10 @@ ENT.SmokeTrail = true
 
 function ENT:Detonate()
     local attacker = self.Attacker or self:GetOwner() or self
-    local mult = (self.NPCDamage and 0.5 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
+    local mult = (self.NPCDamage and 0.25 or 1) * TacRP.ConVars["mult_damage_explosive"]:GetFloat()
 
-    if engine.ActiveGamemode() == "terrortown" then
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 35)
-    else
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
-        self:FireBullets({
-            Attacker = attacker,
-            Damage = 100 * mult,
-            Tracer = 0,
-            Src = self:GetPos(),
-            Dir = self:GetForward(),
-            HullSize = 16,
-            Distance = 128,
-            IgnoreEntity = self,
-            Callback = function(atk, btr, dmginfo)
-                dmginfo:SetDamageType(DMG_AIRBOAT + DMG_SNIPER + DMG_BLAST) // airboat damage for helicopters and LVS vehicles
-                dmginfo:SetDamageForce(self:GetForward() * 3000) // LVS uses this to calculate penetration!
-            end,
-        })
-    end
+    util.BlastDamage(self, attacker, self:GetPos(), 256, 100 * mult)
+    self:ImpactTraceAttack(ent, 100 * mult, 100)
 
     local fx = EffectData()
     fx:SetOrigin(self:GetPos())
