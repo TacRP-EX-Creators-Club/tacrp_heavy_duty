@@ -26,7 +26,7 @@ Sounds: Treyarch, rzen1th
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_hk23e_beta10.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mg4.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_hk23e_beta10.mdl"
 
 SWEP.Slot = 2
 SWEP.SlotAlt = 3
@@ -177,7 +177,7 @@ SWEP.ClipSize = 100
 SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mg4.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/hk23e.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 5.5
@@ -273,7 +273,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         Pos_VM = Vector(-5.2, 0, 33),
-        Pos_WM = Vector(33, 1.15, -5.75),
+        Pos_WM = Vector(33, 1.2, -5.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
     },
