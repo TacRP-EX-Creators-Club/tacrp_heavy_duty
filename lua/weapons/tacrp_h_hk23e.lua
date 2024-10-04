@@ -1,5 +1,5 @@
 SWEP.Base = "tacrp_base"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 AddCSLuaFile()
 
@@ -184,15 +184,15 @@ SWEP.ReloadUpInTime = 5.5
 SWEP.DropMagazineTime = 0.7
 
 SWEP.BulletBodygroups = {
-    [1] = {5, 0},
-    [2] = {5, 1},
-    [3] = {5, 2},
-    [4] = {5, 3},
-    [5] = {5, 4},
-    [6] = {5, 5},
-    [7] = {5, 6},
+    [1] = {3, 0},
+    [2] = {3, 1},
+    [3] = {3, 2},
+    [4] = {3, 3},
+    [5] = {3, 4},
+    [6] = {3, 5},
+    [7] = {3, 6},
 }
-SWEP.DefaultBodygroups = "000007"
+SWEP.DefaultBodygroups = "0007"
 
 // sounds
 
@@ -232,39 +232,36 @@ SWEP.AnimationTranslationTable = {
 SWEP.AttachmentElements = {
     ["sights"] = {
         BGs_VM = {
-            {1, 1}
+            {2, 1}
         },
         BGs_WM = {
-            {1, 1}
-        },
-    },
-    ["extendedbelt"] = {
-        BGs_VM = {
             {2, 1}
         },
     },
     ["bipod"] = {
         BGs_VM = {
-            {3, 1}
+            {1, 1}
         },
         BGs_WM = {
-            {3, 1}
+            {1, 1}
         },
     },
 }
 
 //ValveBiped.MG4_root
 
+SWEP.NoRMR = true
+
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.MG4_root",
         InstalledElements = {"sights"},
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1.1,
-        Pos_VM = Vector(-7.5, 0, 6),
+        Pos_VM = Vector(-7.7, -0.07, 7.4),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(8, 1.15, -7),
         Ang_WM = Angle(0, 0, 180),
@@ -287,7 +284,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-5.225, -1.1, 26),
+        Pos_VM = Vector(-5.225, -1, 26),
         Pos_WM = Vector(21.5, 2, -5.25),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, 90),
