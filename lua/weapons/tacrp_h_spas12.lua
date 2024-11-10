@@ -18,7 +18,7 @@ SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Luigi Franchi S.p.A."
 SWEP.Trivia_Year = "1979"
 
-SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Faction = TacRP.FACTION_COALITION // This is the most police shotgun to ever exist
 SWEP.Credits = [[
 Model & Textures: Stoke
 Sounds: iFlip & speedonerd
