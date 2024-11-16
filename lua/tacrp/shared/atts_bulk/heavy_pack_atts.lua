@@ -8,7 +8,7 @@ ATT.FullName = "Semi-Auto"
 ATT.Icon = Material("entities/tacrp_att_bolt_light.png", "mips smooth")
 ATT.Description = "Switch to semi-auto operation, sacrficing stopping power for fire rate."
 ATT.Pros = {"stat.rpm"}
-ATT.Cons = {"stat.damage_max", "stat.spread", "stat.muzzlevelocity"}
+ATT.Cons = {"stat.damage_max", "stat.spread", "stat.recoil"}
 ATT.Ignore = false
 
 ATT.Category = "bolt_spas"
@@ -18,9 +18,9 @@ ATT.SortOrder = 0
 ATT.Mult_RPM = 2
 ATT.Mult_ShootTimeMult = 1
 
-ATT.Mult_MuzzleVelocity = 0.75
-ATT.Add_Damage_Max = -2
+ATT.Add_Damage_Max = -4
 ATT.Mult_Spread = 1.4
+ATT.Add_RecoilKick = 5
 
 ATT.Override_EjectDelay = 0
 ATT.Override_Sound_Shoot = "^tacint_shark/spas/fire_semi.wav"
