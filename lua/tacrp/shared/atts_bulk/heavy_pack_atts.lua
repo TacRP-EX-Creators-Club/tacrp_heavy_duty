@@ -4,7 +4,7 @@ local ATT
 ATT = {}
 
 ATT.PrintName = "Semi"
-ATT.FullName = "Semi-Auto"
+ATT.FullName = "Franchi SPAS-12 Semi-Auto"
 ATT.Icon = Material("entities/tacrp_att_bolt_light.png", "mips smooth")
 ATT.Description = "Switch to semi-auto operation, sacrficing stopping power for fire rate."
 ATT.Pros = {"stat.rpm"}
@@ -41,11 +41,11 @@ TacRP.LoadAtt(ATT, "trigger_spas_semi")
 --SPAS HL2 Altfire
 ATT = {}
 
-ATT.PrintName = "2 Shot"
-ATT.FullName = "Double Shot"
+ATT.PrintName = "Freeman"
+ATT.FullName = "Half-Life 2 Double Shot"
 ATT.Icon = Material("entities/tacrp_att_trigger_burst.png", "mips smooth")
 ATT.Description = "Alternate mehcanism that can fire two shots at once, somehow..."
-ATT.Pros = {"Twice the fun"}
+ATT.Pros = {"att.pro.trigger_spas_freeman1"}
 ATT.Cons = {"stat.recoil", "rating.control"}
 ATT.Ignore = true
 
