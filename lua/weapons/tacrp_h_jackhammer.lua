@@ -63,6 +63,7 @@ SWEP.Range_Min = 100
 SWEP.Range_Max = 1000
 SWEP.Penetration = 1
 SWEP.ArmorPenetration = 0.4
+SWEP.ArmorBonus = 0.25
 SWEP.Num = 9
 
 SWEP.BodyDamageMultipliers = {
