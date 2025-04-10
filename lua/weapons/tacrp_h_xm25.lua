@@ -14,6 +14,8 @@ SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "6Launcher"
 
 SWEP.Description = "Bullpup grenade launcher with an integrated rangefinder scope, good for medium range suppression. High rate of fire but grenades are fairly slow and weak."
+SWEP.Description_Quote = "Smart technology for smart players." -- PAYDAY 2 (2015), taken from its description
+
 SWEP.Trivia_Caliber = "25x40mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "2010"
