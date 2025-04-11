@@ -11,8 +11,8 @@ SWEP.Category = "Tactical RP (Special)"
 SWEP.SubCatTier = "9Special"
 SWEP.SubCatType = "7Special Weapon"
 
-SWEP.Description = "Unfathomly large \"hunting rifle\" shooting a ludicrously powerful round. I don't know how you're even able to shoulder-fire this thing. \nEquipped with a 10x scope by default."
-SWEP.Description_Quote = "What."
+SWEP.Description = "Unfathomly large \"hunting rifle\" shooting a ludicrously powerful round. \nEquipped with a 10x scope by default."
+SWEP.Description_Quote = "How you can shoulder-fire this, let alone hold it, will always be a mystery."
 
 SWEP.Trivia_Caliber = ".950 JDJ"
 SWEP.Trivia_Manufacturer = "SSK Industries"
