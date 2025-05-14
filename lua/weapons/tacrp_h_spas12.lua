@@ -12,7 +12,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Shotgun"
 
 SWEP.Description = "Imposing combat shotgun with dual mode operation. High power and stable recoil. Folding stock blocks the use of optics."
-SWEP.Description_Quote = "\"Wrong.\""
+SWEP.Description_Quote = "\"Take hold of a weapon, a shield, and rise to help me!\"" -- Father Grigori, Half-Life 2
 
 SWEP.Trivia_Caliber = "12 Gauge"
 SWEP.Trivia_Manufacturer = "Luigi Franchi S.p.A."
