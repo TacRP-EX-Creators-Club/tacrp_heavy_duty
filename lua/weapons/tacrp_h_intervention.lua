@@ -4,15 +4,15 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "CheyTac Intervention"
+SWEP.PrintName = "CheyTac M200"
 SWEP.AbbrevName = "Intervention"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "7Sniper Rifle"
 
-SWEP.Description = "Futuristic-looking sniper-AMR hybrid with excellent armor penetration and high muzzle velocity. \nEquipped with a 12x scope by default."
-SWEP.Description_Quote = "1v1 me on rust m8 i bet u cant even quickscope u fkn noob"
+SWEP.Description = "Futuristic in-between of a sniper rifle and an AMR. Excellent armor penetration and high muzzle velocity. \nEquipped with a 12x scope by default."
+SWEP.Description_Quote = "\"Just like old times.\"" -- Modern Warfare 2 (2009)
 
 SWEP.Trivia_Caliber = ".408 Cheyenne Tactical"
 SWEP.Trivia_Manufacturer = "CheyTac USA"
