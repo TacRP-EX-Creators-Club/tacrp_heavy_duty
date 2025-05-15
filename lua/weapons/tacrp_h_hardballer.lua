@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Pistol"
 SWEP.Description = "Long-slide pistol with stainless steel construction. Accurate and hits hard at range."
 SWEP.Description_Quote = "\"I'll be back...\""
 
-SWEP.Trivia_Caliber = ".45 ACP"
+SWEP.Trivia_Caliber = ".45 Super" -- I LOADED .45 SUPER INTO A HARDBALLER. BEST IDEA I EVER DUN HAD.
 SWEP.Trivia_Manufacturer = "Arcadia Machine & Tool."
 SWEP.Trivia_Year = "1980"
 
