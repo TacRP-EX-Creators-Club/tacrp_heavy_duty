@@ -95,7 +95,7 @@ SWEP.RecoilMaximum = 10
 SWEP.RecoilResetTime = 1.25
 SWEP.RecoilDissipationRate = 0.9
 SWEP.RecoilFirstShotMult = 1
-SWEP.RecoilCrouchMult = 1
+SWEP.RecoilMultCrouch = 1
 
 SWEP.RecoilVisualKick = 30
 SWEP.RecoilKick = 50
