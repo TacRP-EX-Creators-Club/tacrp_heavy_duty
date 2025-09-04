@@ -31,6 +31,9 @@ ATT.Hook_TranslateSequence = function(self, seq)
     elseif seq == "blind_fire" then
         return {"blind_shoot_semi"}
     end
+	if seq == "reload_finish" then
+		return {"reload_finish_semi"}
+	end
 end
 
 ATT.Free = true
