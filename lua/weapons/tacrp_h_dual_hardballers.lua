@@ -89,7 +89,7 @@ SWEP.BodyDamageMultipliers = {
 
 // misc. shooting
 
-SWEP.Firemodes = {1, 2}
+SWEP.Firemodes = {1}
 
 SWEP.RPM = 330
 SWEP.RPMMultSemi = 1.1
@@ -163,7 +163,8 @@ SWEP.HolsterAng = Angle(60, 5, 0)
 
 // reload
 
-SWEP.ClipSize = 14
+SWEP.ClipSize = 7
+SWEP.ClipSize2 = 7
 SWEP.Ammo = "pistol"
 SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
@@ -213,6 +214,7 @@ SWEP.AnimationTranslationTable = {
 
 SWEP.LastShot = true
 SWEP.Akimbo = true
+SWEP.DualAkimbo = true  // Proper dual wielding: LMB=left, RMB=right
 SWEP.EffectsAlternate = true
 
 // attachments
