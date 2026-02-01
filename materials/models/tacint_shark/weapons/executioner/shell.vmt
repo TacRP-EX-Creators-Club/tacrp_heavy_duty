@@ -15,4 +15,16 @@
 //	"$basemapalphaenvmapmask" "1"
 	$envmapfresnel "0.01"
 	$envmaptint "[ .01 .01 .01 ]"
+
+	$blendtintbybasealpha 1
+    $blendtintcoloroverbase 0.1
+    $color2 "[1 1 1]"
+
+    Proxies
+    {
+        ShellColor
+        {
+            resultvar $color2
+        }
+    }
 }
